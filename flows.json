@@ -104,6 +104,18 @@
         "groupType": "default"
     },
     {
+        "id": "9ad2510f2467662b",
+        "type": "global-config",
+        "env": [
+            {
+                "name": "LOCAL_PASSWORD",
+                "value": "myLocalDevPassword",
+                "type": "str"
+            }
+        ],
+        "modules": {}
+    },
+    {
         "id": "644af487dec7ddde",
         "type": "inject",
         "z": "f6f2187d.f17ca8",
@@ -122,8 +134,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
+        "payload": "LOCAL_PASSWORD",
+        "payloadType": "env",
         "x": 130,
         "y": 100,
         "wires": [
